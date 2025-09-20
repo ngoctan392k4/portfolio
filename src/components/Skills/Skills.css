@@ -1,0 +1,65 @@
+.skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 170px;
+}
+
+.skill-title{
+    position: relative;
+}
+
+.skill-title h1{
+    padding: 0px 30px;
+    font-size: 80px;
+    font-weight: 600px;
+}
+
+.skill-title img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.skills-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    gap: 11px;
+}
+
+.skill:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.skill-image-container{
+    border: 2px solid transparent;
+    padding: 10px;
+    background: #000; /* nền trong card */
+    border-image: linear-gradient(45deg, #DA7C25, #B923E1) 1;
+    position: relative;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+}
+
+.skill-image-container img{
+    width: 75px;
+}
