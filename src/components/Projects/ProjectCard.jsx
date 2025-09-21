@@ -7,6 +7,9 @@ const ProjectCard = ({ project }) => {
         {project.image && <img src={project.image} alt={project.title} />}
       </div>
 
+      {/* A line between project card */ }
+      <div className="divider"></div>
+
       <div className="project-card-content">
         <h3>{project.title}</h3>
         <p>{project.description}</p>
@@ -25,6 +28,17 @@ const ProjectCard = ({ project }) => {
         >
           🔗 View on GitHub
         </a>
+
+        {project.demo && (
+          <a
+            href={project.demo}
+            target="_blank"
+            rel="noreferrer"
+            className="project-demo"
+          >
+            🔗 Demo on Looker
+          </a>
+        )}
       </div>
     </div>
   );

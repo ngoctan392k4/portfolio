@@ -1,65 +1,104 @@
-.skills{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 80px;
-    margin: 80px 170px;
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  margin: 80px 170px;
 }
 
-.skill-title{
-    position: relative;
+.skill-title {
+  position: relative;
 }
 
-.skill-title h1{
-    padding: 0px 30px;
-    font-size: 80px;
-    font-weight: 600px;
+.skill-title h1 {
+  padding: 0px 30px;
+  font-size: 80px;
+  font-weight: 600px;
 }
 
-.skill-title img{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: -1;
+.skill-title img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  width: 226.49px;
+  height: 70.99px;
 }
 
-.skills-section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 80px;
-    flex-wrap: wrap;
+.skills-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  flex-wrap: wrap;
 }
 
 .skill {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    align-items: center;
-    gap: 11px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  gap: 11px;
 }
 
-.skill:hover{
-    transform: scale(1.05);
-    transition: 0.3s;
+.skill:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
 }
 
-.skill-image-container{
+.skill-image-container {
+  border: 2px solid transparent;
+  padding: 10px;
+  background: #000;
+  border-image: linear-gradient(135deg, #00feba, #5b548a) 1;
+  position: relative;
+  border-radius: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+}
+
+.skill-image-container img {
+  width: 75px;
+}
+
+.skill p{
+  margin: 0 0 10px;
+}
+
+@media (max-width: 768px) {
+  .skills {
+    gap: 80px;
+    margin: 50px 70px;
+    align-items: start;
+  }
+  .skill-title h1 {
+    font-size: 50px;
+    padding: 0;
+  }
+  .skill-title img {
+    width: 130px;
+    right: -20px;
+  }
+  .skill-image-container {
     border: 2px solid transparent;
     padding: 10px;
-    background: #000; /* nền trong card */
-    border-image: linear-gradient(45deg, #DA7C25, #B923E1) 1;
+    background: #000;
+    border-image: linear-gradient(135deg, #00feba, #5b548a) 1;
     position: relative;
     border-radius: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 120px;
-    height: 120px;
-}
-
-.skill-image-container img{
-    width: 75px;
+    width: 90px;
+    height: 90px;
+  }
+  .skill-image-container img {
+    width: 60px;
+  }
 }
